@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="countdown.css">
+</head>
+<body>
+    <h1 id="title">Input Countdown Time</h1>
+    <div id="setup">
+        <input class="time" type="number" id="day" max="99" min="0" value="0">
+        <label class="colon">:</label>
+        <input class="time" type="number" id="hour" max="23" min="0" value="0">
+        <label class="colon">:</label>
+        <input class="time" type="number" id="minute" max="59" min="0" value="0">
+        <label class="colon">:</label>
+        <input class="time" type="number" id="second" max="59" min="0" value="0"><br>
+
+        <label for="day" class="timeLbl" id="dayLbl">DAYS</label>
+        <label for="hour" class="timeLbl" id="hourLbl">HOURS</label>
+        <label for="minute" class="timeLbl" id="minuteLbl">MINUTES</label>
+        <label for="second" class="timeLbl" id="secondLbl">SECONDS</label>
+
+        <button id="startCountdown">START</button>
+        <p id="countdownAlert">Countdown time should be 1 second or more.</p>
+    </div>
+    
+    <div id="countdown">
+        <label class="timeCountdown" id="dayCountdown">00</label>
+        <label class="colonCountdown">:</label>
+        <label class="timeCountdown" id="hourCountdown">00</label>
+        <label class="colonCountdown">:</label>
+        <label class="timeCountdown" id="minuteCountdown">00</label>
+        <label class="colonCountdown">:</label>
+        <label class="timeCountdown" id="secondCountdown">00</label>
+
+        <label for="dayCountdown" class="timeCountdownLbl" id="dayCountdownLbl">DAYS</label>
+        <label for="hourCountdown" class="timeCountdownLbl" id="hourCountdownLbl">HOURS</label>
+        <label for="minuteCountdown" class="timeCountdownLbl" id="minuteCountdownLbl">MINUTES</label>
+        <label for="secondCountdown" class="timeCountdownLbl" id="secondCountdownLbl">SECONDS</label>
+
+        <button id="closeCountdown">x</button>
+    </div>
+
+    <script src="countdown.js"></script>
+</body>
+</html>

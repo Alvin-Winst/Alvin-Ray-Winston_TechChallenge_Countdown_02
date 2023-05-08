@@ -1,0 +1,106 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+#setup{
+    margin-left: 2%;
+}
+button{
+    position: absolute;
+    cursor: pointer;
+}
+input{
+    width: 40px;
+    font-size: 30px;
+}
+.colon{
+    font-size: 30px;
+}
+.time{
+    margin-bottom: 5px;
+    text-align: center;
+}
+.timeLbl{
+    font-size: 15px;
+}
+#dayLbl{
+    margin-left: 6.5px;
+}
+#hourLbl{
+    margin-left: 35.5px;
+}
+#minuteLbl{
+    margin-left: 21px;
+}
+#secondLbl{
+    margin-left: 14.5px;
+}
+#startCountdown{
+    top: 175px;
+    left: 115px;
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 15px;
+    width: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 550;
+}
+#countdownAlert{
+    color: red;
+    font-size: 15px;
+    position: absolute;
+    top: 135px;
+    display: none;
+}
+
+#countdown{
+    position: absolute;
+    width: 600px;
+    height: 175px;
+    top: 150px;
+    left: 375px;
+    background-image: linear-gradient(150deg,lightgreen,lightblue);
+    border-radius: 25px;
+    padding-left: 40px;
+    padding-top: 90px;
+    box-shadow: 5px 10px 25px gray;
+    display: none;
+}
+.timeCountdown, .colonCountdown{
+    font-size: 75px;
+    color: white;
+    text-shadow: 0px 2px 15px gray;
+}
+
+.timeCountdown{
+    font-weight: 550;
+}
+
+.timeCountdownLbl{
+    color: white;
+    font-size: 20px;
+}
+#dayCountdownLbl{
+    margin-left: 20px;
+}
+#hourCountdownLbl{
+    margin-left: 91px;
+}
+#minuteCountdownLbl{
+    margin-left: 73px;
+}
+#secondCountdownLbl{
+    margin-left: 62px;
+}
+#closeCountdown{
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 35px;
+    top: 0px;
+    right: 10px;
+    transition-duration: 150ms;
+    text-shadow: 0px 2px 15px gray;
+}
+#closeCountdown:hover{
+    color: rgb(247, 247, 247);
+}
